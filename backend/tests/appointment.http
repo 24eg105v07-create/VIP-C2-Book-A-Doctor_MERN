@@ -1,0 +1,42 @@
+POST http://localhost:5000/api/v1/appointment/book-appointment
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3ODE1MTkxOTQsImV4cCI6MTc4MjEyMzk5NH0.hV2h3nkX13RKzDj-huy2p_wD7psi9AjdLhicjq3z3TQ
+Content-Type: application/json
+
+{
+  "doctorId": "6a2fbfeff5fcec07dcaba781",
+  "doctorInfo": {
+    "name": "Dr Vivek"
+  },
+  "userInfo": {
+    "name": "Patient Vivek"
+  },
+  "date": "20-06-2026",
+  "time": "10:00 AM"
+}
+
+
+
+### Doctor Appointments
+
+GET http://localhost:5000/api/v1/appointment/doctor-appointments
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3ODE1MTkxOTQsImV4cCI6MTc4MjEyMzk5NH0.hV2h3nkX13RKzDj-huy2p_wD7psi9AjdLhicjq3z3TQ
+
+
+
+### Approve Appointment
+
+PUT http://localhost:5000/api/v1/appointment/update-appointment-status
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3ODE1MTkxOTQsImV4cCI6MTc4MjEyMzk5NH0.hV2h3nkX13RKzDj-huy2p_wD7psi9AjdLhicjq3z3TQ
+Content-Type: application/json
+
+{
+  "appointmentId": "6a2fd1a7664476322b9918a5",
+  "status": "approved"
+}
+
+
+
+### User Appointments
+
+GET http://localhost:5000/api/v1/appointment/user-appointments
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJkb2N0b3IiLCJpYXQiOjE3ODE1MTkxOTQsImV4cCI6MTc4MjEyMzk5NH0.hV2h3nkX13RKzDj-huy2p_wD7psi9AjdLhicjq3z3TQ

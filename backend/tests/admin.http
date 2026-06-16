@@ -1,0 +1,6 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTUxNTY2OCwiZXhwIjoxNzgyMTIwNDY4fQ.gAe-YsJM8H2o0TQO4eBBj-hxvuDr__r49dfdHp9tmxM
+
+### Get All Doctors
+
+GET http://localhost:5000/api/v1/admin/get-all-doctors
+Authorization: Bearer {{token}}

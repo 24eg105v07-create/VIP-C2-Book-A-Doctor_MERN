@@ -1,0 +1,104 @@
+@baseUrl = http://localhost:5000/api/v1/auth
+
+### =========================================
+### Register User
+### =========================================
+
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "name": "Vivek",
+  "email": "vivek@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Register Duplicate User
+### =========================================
+
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "name": "Vivek",
+  "email": "vivek@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Login User
+### =========================================
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "vivek@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Login Wrong Password
+### =========================================
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "vivek@gmail.com",
+  "password": "wrongpassword"
+}
+
+###
+
+### =========================================
+### Login Non Existing User
+### =========================================
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "unknown@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Get Current User
+### =========================================
+
+GET {{baseUrl}}/current-user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTUxNTY2OCwiZXhwIjoxNzgyMTIwNDY4fQ.gAe-YsJM8H2o0TQO4eBBj-hxvuDr__r49dfdHp9tmxM
+
+###
+
+### =========================================
+### Get Current User Without Token
+### =========================================
+
+GET {{baseUrl}}/current-user
+
+
+
+
+
+### Get Notifications
+
+GET http://localhost:5000/api/v1/auth/notifications
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTUxNTY2OCwiZXhwIjoxNzgyMTIwNDY4fQ.gAe-YsJM8H2o0TQO4eBBj-hxvuDr__r49dfdHp9tmxM
+
+###
+
+### Mark All Notifications
+
+POST http://localhost:5000/api/v1/auth/mark-all-notifications
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTUxNTY2OCwiZXhwIjoxNzgyMTIwNDY4fQ.gAe-YsJM8H2o0TQO4eBBj-hxvuDr__r49dfdHp9tmxM

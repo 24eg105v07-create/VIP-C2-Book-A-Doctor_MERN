@@ -1,0 +1,37 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgxNTA2MzQxLCJleHAiOjE3ODIxMTExNDF9.0kgXd-OYFEwnWFs1g7g602Z0p4BI4LlzcD0ZmFLnxWg
+
+### Apply Doctor
+
+POST http://localhost:5000/api/v1/doctor/apply-doctor
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "firstName": "Vivek",
+  "lastName": "Reddy",
+  "phone": "9876543210",
+  "email": "vivek@gmail.com",
+  "specialization": "Cardiologist",
+  "experience": "5 Years",
+  "feesPerConsultation": 500,
+  "timings": ["09:00 AM", "05:00 PM"]
+}
+
+
+### Get Doctor Info
+
+GET http://localhost:5000/api/v1/doctor/get-doctor-info
+Authorization: Bearer {{token}}
+
+
+
+### Approve Doctor
+
+PUT http://localhost:5000/api/v1/admin/approve-doctor/6a2fbfeff5fcec07dcaba781
+Authorization: Bearer {{token}}
+
+
+### Get All Approved Doctors
+
+GET http://localhost:5000/api/v1/doctor/get-all-doctors
+Authorization: Bearer {{token}}
