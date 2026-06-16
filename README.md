@@ -237,3 +237,30 @@ This project helped implement and understand:
 * Environment Variables
 * CORS Configuration
 * Production Debugging
+
+---
+
+## 👨‍💻 Author
+
+**CHETHULA HARISH**
+
+Full Stack MERN Developer
+
+### GitHub
+
+https://github.com/24eg105v07-create
+
+### Repository
+
+https://github.com/24eg105v07-create/MERN-HARISH
+
+### Portfolio Project
+
+Book A Doctor is a full-stack healthcare appointment management platform developed as part of my MERN stack learning journey. The project demonstrates authentication, role-based authorization, appointment management, Redux state management, REST API development, and cloud deployment using Vercel, Render, and MongoDB Atlas.
+
+---
+
+### Connect With Me
+
+* GitHub: https://github.com/24eg105v07-create
+* Email: [harishchethula892@gmail.com]
